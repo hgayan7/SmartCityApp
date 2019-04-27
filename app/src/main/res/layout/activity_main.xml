@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2F0EF"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        app:srcCompat="@drawable/back" />
+    <RelativeLayout
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#E7FDFC"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:onClick="goDrain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:onClick="goDrain"
+                    android:id="@+id/imageButton4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/drains"
+                    android:elevation="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="11dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Drainage System"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view2"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/card_view"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="122dp"
+
+            android:background="#E7FDFC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:onClick="goWaste"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/card_view2">
+
+
+                <ImageButton
+                    android:onClick="goWaste"
+                    android:id="@+id/imageButton5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/waste"
+                    android:elevation="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Waste Management System"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view3"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/card_view2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="122dp"
+            android:layout_gravity="center"
+            android:background="#E7FDFC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:onClick="goParking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/card_view2">
+
+
+                <ImageButton
+                    android:onClick="goParking"
+                    android:id="@+id/imageButton6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/parking"
+                    android:elevation="10dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="18dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Parking System"
+                    android:textStyle="bold"
+                    android:textAlignment="gravity"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

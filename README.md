@@ -1,7 +1,7 @@
 # SmartCityApp
 Android app for Smart City Final year project.
 
-Screenshots - 
+## Screenshots - 
 
 
 ![home](https://user-images.githubusercontent.com/29502161/59490702-010db600-8ea3-11e9-9864-ddc97bda4441.png)
